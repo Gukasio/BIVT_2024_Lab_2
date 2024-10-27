@@ -74,7 +74,7 @@ public class Program
         bool answer = false;
 
         // code here
-        if ((y>=0) & (y + Math.Abs(x) <= 1))
+        if ((y>=0) && (y + Math.Abs(x) <= 1))
         {
             answer = true;
         }
@@ -105,7 +105,7 @@ public class Program
         double answer = 0;
 
         // code here
-        if ((a != 0) & (b != 0) & (c != 0))
+        if ((a != 0) && (b != 0) && (c != 0))
         {
             answer = Math.Max(Math.Min(a, b), c);
         }
@@ -177,7 +177,7 @@ public class Program
         {
             answer = 0;
         }
-        if (((-1) < x)&(x <= 1)) {
+        if (((-1) < x)&&(x <= 1)) {
             answer = 1 + x;
         }
         if (x > 0)
@@ -198,7 +198,7 @@ public class Program
             answer = 1;
 
         }
-        if ((x <= 1)&(x>-1))
+        if ((x <= 1)&&(x>-1))
         {
             answer = -x;
         }
