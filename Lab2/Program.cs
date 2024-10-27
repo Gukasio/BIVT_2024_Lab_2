@@ -511,7 +511,7 @@ public class Program
        
         return Math.Round(answer, 2);
     }
-    public object Task_2_13(double A, double B, int type)
+    public double Task_2_13(double A, double B, int type)
     {
         double answer = 0;
         if ((A <= 0) || (B <= 0)) return 0;
@@ -523,7 +523,7 @@ public class Program
                 
                 break;
             case 1:
-                answer = Math.PI * (B * B - A * A);
+                answer = Math.PI * Math.Abs(A * A - B * B);
                 Console.WriteLine("Площадь кольца = {0}", answer);
                 
                 break;
