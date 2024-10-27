@@ -260,7 +260,7 @@ public class Program
         for (int i = 1; i <= n; i++)
         {
             double s = double.Parse(Console.ReadLine());
-            if ((s < 30) & (s>0))
+            if ((s < 30) && (s>0))
             {
                 answer += 0.2;
             }
@@ -281,7 +281,7 @@ public class Program
         {
             double x = double.Parse((Console.ReadLine()));
             double y = double.Parse((Console.ReadLine()));
-            if ((x * x + y * y >= r1 * r1) & (x * x + y * y <= r2 * r2)) {
+            if ((x * x + y * y >= r1 * r1) && (x * x + y * y <= r2 * r2)) {
                 answer++;
             }
         }
@@ -477,7 +477,7 @@ public class Program
         Console.WriteLine(avg);
         return (answer, avg);
     }
-    public object Task_2_12(double r, int type)
+    public double Task_2_12(double r, int type)
     {
         double answer = 0;
         if (r <= 0)
@@ -508,10 +508,10 @@ public class Program
                     break;
             }
         }
-        answer = Math.Round(answer, 2);
-        return answer;
+       
+        return Math.Round(answer, 2);
     }
-    public double Task_2_13(double A, double B, int type)
+    public object Task_2_13(double A, double B, int type)
     {
         double answer = 0;
         if ((A <= 0) || (B <= 0)) return 0;
@@ -536,7 +536,7 @@ public class Program
                 Console.WriteLine("Sorry...");
                 break;
         }
-        return (Math.Round(answer, 1));
+        return (Math.Round(answer, 2));
     }
     #endregion
 
@@ -606,7 +606,7 @@ public class Program
             bool result2 = double.TryParse(output1, out var y);
             if (result2 == false) break;
 
-            if ((x * x + y * y >= r1 * r1) & (x * x + y * y <= r2 * r2))
+            if ((x * x + y * y >= r1 * r1) && (x * x + y * y <= r2 * r2))
             {
                 answer++;
             }
